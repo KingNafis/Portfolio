@@ -152,32 +152,6 @@ nav ul li a:hover {
 .item img:active {
     transform: scale(1);
 }
-
-/* Responsive Grid for Mobile */
-@media (max-width: 768px) {
-    .grid {
-        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    }
-
-    .item {
-        height: 200px;
-    }
-
-    #portfolio h2 {
-        font-size: 2rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .grid {
-        grid-template-columns: 1fr;
-    }
-
-    .item {
-        height: 180px;
-    }
-}
-
 /* Contact Section */
 #contact {
     padding: 80px 300px;
@@ -210,3 +184,95 @@ footer {
     background: #333;
     color: #fff;
 }
+
+/* Responsive Grid and Layout Adjustments */
+@media (max-width: 992px) {
+    #portfolio h2 {
+        font-size: 2rem;
+    }
+
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    #about {
+        padding: 60px 20px; /* Adjust padding for About section */
+        text-align: center;
+    }
+
+    #contact {
+        padding: 60px 20px; /* Adjust padding for Contact section */
+    }
+
+    form input, form textarea {
+        font-size: 0.9rem;
+    }
+
+    form button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    .cta-button {
+        font-size: 0.8rem;
+        padding: 10px 20px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr; /* Single column grid for very small screens */
+    }
+
+    .item {
+        height: 180px; /* Adjust grid item height */
+    }
+
+    #about {
+        padding: 40px 10px; /* Further adjust padding for smaller screens */
+    }
+
+    #contact {
+        padding: 40px 10px;
+    }
+
+    form input, form textarea, form button {
+        font-size: 0.85rem; /* Adjust input, textarea, and button sizes */
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
