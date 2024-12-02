@@ -324,7 +324,7 @@ footer {
     }
 
     #about, #contact {
-        padding: 20px 10px; /* Reduce side and vertical padding */
+        padding: 0px 0px; /* Reduce side and vertical padding */
     }
 
     #about h2, #contact h2 {
