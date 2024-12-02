@@ -275,4 +275,48 @@ footer {
         font-size: 0.9rem;
     }
 }
+@media (max-width: 375px) {
+    header {
+        padding: 10px; /* Adjust padding for the header */
+    }
 
+    nav ul li a {
+        font-size: 0.85rem; /* Reduce navbar font size */
+        padding: 5px;
+    }
+
+    .hero-content h1 {
+        font-size: 1.8rem; /* Smaller hero heading for tiny screens */
+    }
+
+    .hero-content p {
+        font-size: 0.8rem; /* Reduce paragraph font size */
+    }
+
+    .cta-button {
+        font-size: 0.75rem;
+        padding: 8px 15px;
+    }
+
+    #about {
+        padding: 30px 10px;
+    }
+
+    #contact {
+        padding: 30px 10px;
+    }
+
+    form input, form textarea {
+        font-size: 0.8rem;
+        padding: 8px; /* Reduce padding for input fields */
+    }
+
+    form button {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
