@@ -275,48 +275,89 @@ footer {
         font-size: 0.9rem;
     }
 }
+/* General Reset for Smallest Devices */
 @media (max-width: 375px) {
+    body {
+        margin: 0 auto;
+        padding: 0;
+        max-width: 100%;
+        overflow-x: hidden; /* Prevent horizontal scroll */
+    }
+
     header {
-        padding: 10px; /* Adjust padding for the header */
+        padding: 5px 10px; /* Compact header */
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 2px;
     }
 
     nav ul li a {
-        font-size: 0.85rem; /* Reduce navbar font size */
+        font-size: 0.8rem;
         padding: 5px;
     }
 
+    .hero-section {
+        height: 85vh; /* Shorter height to fit smaller screens */
+        background-size: cover;
+        background-position: center;
+    }
+
     .hero-content h1 {
-        font-size: 1.8rem; /* Smaller hero heading for tiny screens */
+        font-size: 1.5rem; /* Reduce heading size */
+        margin-bottom: 15px;
     }
 
     .hero-content p {
-        font-size: 0.8rem; /* Reduce paragraph font size */
+        font-size: 0.75rem; /* Smaller paragraph text */
+        margin-bottom: 20px;
     }
 
     .cta-button {
-        font-size: 0.75rem;
-        padding: 8px 15px;
+        font-size: 0.7rem;
+        padding: 8px 12px;
     }
 
-    #about {
-        padding: 30px 10px;
+    #about, #contact {
+        padding: 20px 10px; /* Reduce side and vertical padding */
     }
 
-    #contact {
-        padding: 30px 10px;
+    #about h2, #contact h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    #portfolio h2 {
+        font-size: 1.8rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr; /* Single column grid */
+        gap: 15px; /* Reduce spacing between items */
+    }
+
+    .item {
+        height: 150px; /* Smaller height for portfolio items */
     }
 
     form input, form textarea {
-        font-size: 0.8rem;
-        padding: 8px; /* Reduce padding for input fields */
+        font-size: 0.75rem;
+        padding: 8px; /* Compact input fields */
     }
 
     form button {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
         padding: 8px;
     }
 
     footer {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
+        padding: 10px;
     }
 }
+
